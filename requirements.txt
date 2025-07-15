@@ -1,0 +1,13 @@
+pyttsx3
+SpeechRecognition
+spacy
+wikipedia
+pyautogui
+pyaudio
+googletrans==4.0.0-rc1
+opencv-python
+mediapipe
+fer
+faiss-cpu
+sentence-transformers
+PyMuPDF
