@@ -115,7 +115,7 @@ EVA/
 ---
 
 ## 👨‍💻 Author
-Developed by **YOU** using Python & open-source libraries.
+Developed by **K NITHIN** using Python & open-source libraries.
 
 ---
 
