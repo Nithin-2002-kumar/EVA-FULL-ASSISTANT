@@ -1,0 +1,129 @@
+# 📘 EVA – Enhanced Voice Assistant | User Manual
+
+Welcome to EVA, your offline-capable, intelligent voice assistant designed for natural interaction and productivity. This manual covers installation, usage, features, and troubleshooting.
+
+---
+
+## 🧰 System Requirements
+- OS: Windows 10 or higher
+- Python 3.8+
+- Microphone & Speakers
+- Webcam (for emotion/gesture detection)
+- Internet (initially for downloading models)
+
+---
+
+## 📦 Installation
+
+### 1. Install Python Libraries
+```bash
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+```
+
+### 2. Run the Assistant
+```bash
+python eva.py
+```
+
+---
+
+## 🎛️ EVA Interface
+
+- Fullscreen GUI with:
+  - Live command feedback
+  - Status display (Listening / Speaking)
+  - Mute / Exit controls
+
+---
+
+## 🎤 Voice Control
+
+### Sample Voice Commands
+| Action              | Example Command                        |
+|---------------------|----------------------------------------|
+| Open Notepad        | "open notepad"                         |
+| Open Calculator     | "open calculator"                      |
+| Take Screenshot     | "take a screenshot"                    |
+| Wikipedia Search    | "search wikipedia machine learning"    |
+| General Search      | "search online python decorators"      |
+| Shutdown            | "shutdown"                             |
+| Emotion Detection   | "detect my emotion"                    |
+| Gesture Control     | "activate gesture control"             |
+| Exit EVA            | "exit"                                 |
+
+---
+
+## 🌍 Multilingual Support
+
+- EVA supports Hindi, Telugu, Tamil, Spanish, and more.
+- During setup, say your preferred language.
+- EVA translates both input and output automatically.
+
+---
+
+## ✋ Gesture Commands
+
+| Gesture           | Action         |
+|-------------------|----------------|
+| Open Palm         | Activate       |
+| Index Finger Up   | Scroll Up      |
+| Index Finger Down | Scroll Down    |
+| Pinch (🤏)         | Click          |
+
+Press `Q` to exit gesture mode.
+
+---
+
+## 😊 Facial Emotion Tracking
+
+- Say: "detect my emotion"
+- EVA opens webcam, detects facial emotion
+- Responds empathetically based on detected emotion
+
+Supported Emotions:
+- Happy, Sad, Angry, Neutral, Surprise, Disgust, Fear
+
+---
+
+## 📚 Offline Knowledge Base (Q&A)
+
+### Load and Ask From Documents:
+1. Say: **"load knowledge base"** → provide path to `.pdf` or `.txt`
+2. Say: **"ask knowledge base"** → ask your question
+3. EVA responds using vector search (offline)
+
+---
+
+## 🛑 Exiting EVA
+- Say: **"exit"**
+- Or press **Exit** button on GUI
+
+---
+
+## 🧪 Troubleshooting
+
+| Issue                      | Solution                                         |
+|---------------------------|--------------------------------------------------|
+| Mic not working           | Check input device / install `pyaudio` properly  |
+| No voice output           | Check speaker / TTS engine (pyttsx3)             |
+| Gesture window freezes    | Ensure webcam is free, press `Q` to close        |
+| App not opening           | Use correct command syntax                       |
+| Errors with translation   | Check internet (Google Translate API is online)  |
+
+---
+
+## 📜 License
+This project is released under the **MIT License**.
+
+---
+
+## 🙌 Support & Contribution
+You can extend EVA with:
+- Music/Media Control
+- Plugin System
+- LLM Chat (using OpenAI, Gemini, etc.)
+
+Contributions welcome. Happy hacking!
+
+---
